@@ -91,3 +91,8 @@
   .card-content-4 {
     border: 3px solid #549ef2;
   }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
