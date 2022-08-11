@@ -1,1 +1,1 @@
-# learn_css
+# https://web.dev/learn/css/
