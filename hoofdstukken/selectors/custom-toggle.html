@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom toggle</title>
+    <style>
+        :checked ~ .toggle__decor {
+  background: rebeccapurple;
+}
+
+:checked ~ .toggle__decor .toggle__thumb {
+  transform: translateX(var(--metric-toggle-thumb-size)) rotate(270deg);
+}
+
+/* Note the rest of the CSS for this toggle is pulled in externally */
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+          <article class="flow">
+            <h1>Custom toggle</h1>
+            <figure class="callout">
+              <p>We can use a <strong>subsequent selector</strong> along with a `<code>:checked</code>` pseudo class to create a pure CSS switch element.</p>
+            </figure>
+      
+            <label class="toggle" for="toggle-element">
+              <span class="toggle__label">Our custom toggle switch</span>
+              <input type="checkbox" role="switch" class="toggle__element" id="toggle-element" />
+              <div class="toggle__decor" aria-hidden="true">
+                <div class="toggle__thumb"></div>
+              </div>
+            </label>
+          </article>
+        </div>
+      </main>
+</body>
+</html>
