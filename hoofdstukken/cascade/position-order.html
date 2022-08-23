@@ -4,27 +4,64 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://codepen.io/web-dot-dev/pen/abpoXGZ.css" />
-  <title>Document</title>
-  <style>
-    .button {
-  background: #ff00ff;
+<style>
+  body {
+  height: 90%;
+  background: tan;
 }
-  </style>
+
+#id1 {
+  background: khaki;
+  width: 60%;
+  height: 500px;
+  position: relative;
+}
+
+#id2 {
+  background: salmon;
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#id3 {
+  background: purple;
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+ul {
+  background: greenyellow;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* margin: 0;
+  padding: 0; */
+  list-style: none;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+
+</style>
 </head>
 <body>
-  <main>
-  <div class="wrapper">
-    <article class="flow">
-      <h1>Cascade position order</h1>
-      <figure class="callout">
-        <p>The <code>&lt;style&gt;</code> element is declared in the <code>&lt;head&gt;</code>, while the <code>&lt;link&gt;</code> element is declared in the <code>&lt;body&gt;</code>. This means the <code>&lt;link&gt;</code> gets more specificity than the <code>&lt;style&gt;</code> element and the blue hex code (<code>#3740ff</code>) is applied to the button’s background.</p>
-      </figure>
-      <button class="button">
-        My background has been set by the second link element.
-      </button>
-    </article>
+  <div id="id1">
+  <div id="id2">Hello again
+    <div id="id3">World</div>
   </div>
-</main>
+  <ul>
+    <li>Lien 1</li>
+    <li>Lien 2</li>
+    <li>Lien 3</li>
+    <li>Lien 4</li>
+  </ul>
+</div>
 </body>
 </html>
